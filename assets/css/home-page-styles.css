@@ -56,6 +56,7 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
   transition: background-color 1s ease-in-out, filter .5s ease-in-out;
 }
 
@@ -76,6 +77,16 @@ body::before {
   height: 100%;
   object-fit: contain;
   transition: 1s ease-in-out;
+}
+
+.s-card__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: bottom 1s ease-in-out;
 }
 
 .s-controller {
@@ -151,6 +162,10 @@ body::before {
 .s-card--hovered .s-card__image {
   transform: scale(1.4);
   filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
+}
+
+.s-card--hovered .s-card__title {
+  bottom: 50%;
 }
 
 body#spider-man-01-hovered::before {

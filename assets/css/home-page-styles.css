@@ -2,7 +2,7 @@
 @import url('/assets/css/global.css');
 
 body {
-  background-color: #B9001F;
+  background-color: var(--primary-color);
 }
 
 body::before {
@@ -94,7 +94,7 @@ body::before {
   height: 2.5rem;
   border: 2px solid white;
   border-radius: 50%;
-  background-color: #B9001F;
+  background-color: var(--primary-color);
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
@@ -112,9 +112,9 @@ body::before {
 }
 
 .s-controller__button--active {
-  color: #B9001F;
+  color: var(--primary-color);
   background-color: white;
-  border: 3px solid #B9001F;
+  border: 3px solid var(--primary-color);
   outline: 2px solid white;
 }
 

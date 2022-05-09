@@ -56,7 +56,7 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out, filter .5s ease-in-out;
 }
 
 .s-card:nth-child(1) {
@@ -146,11 +146,11 @@ body::before {
 .s-card.s-card--hovered {
   cursor: pointer;
   background-image: none;
-  background-color: rgba(0, 0, 0, .5);
 }
 
-.s-card--hovered:not(:first-child) .s-card__image {
+.s-card--hovered .s-card__image {
   transform: scale(1.4);
+  filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
 }
 
 body#spider-man-01-hovered::before {
@@ -167,4 +167,8 @@ body#spider-man-03-hovered::before {
 
 body[id^="spider-man-"]::before {
   opacity: 1;
+}
+
+body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
+  filter: grayscale(100%);
 }

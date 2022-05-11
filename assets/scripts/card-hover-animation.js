@@ -19,3 +19,4 @@ function addEventListenersToCards() {
 }
 
 document.addEventListener("DOMContentLoaded", addEventListenersToCards, false);
+console.log('Hello, Spider-Man');

@@ -1,0 +1,30 @@
+@import url('reset.css');
+@import url('global.css');
+@import url('components/_navigator.css');
+
+.s-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-flow: row nowrap; 
+  background-color: aqua; 
+}
+
+.s-wrapper .s-left-column {
+  width: 100px;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-wrapper .s-main-content{
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  padding-left: 30px;
+}
+
+
+
+

@@ -53,7 +53,7 @@ body::before {
   border: 0.5rem solid white;
   width: calc(100% / 3 - 8%);
   height: 70vh;
-  position: relative;
+  position: absolute;
   transition: background-color 1s ease-in-out, filter .5s ease-in-out;
 }
 
@@ -85,11 +85,13 @@ body::before {
 }
 
 .s-controller {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+  width: 100%;
+  bottom: 1.5rem;
 }
 
 .s-controller__button {
@@ -129,16 +131,6 @@ body::before {
   width: 50%;
   height: 2px;
   position: absolute;
-}
-
-.s-controller__line::before {
-  content: "<";
-  left: -2rem;
-}
-
-.s-controller__line::after {
-  content: ">";
-  right: -2rem;
 }
 
 .s-controller__line::before, .s-controller__line::after {
@@ -181,4 +173,23 @@ body[id^="spider-man-"]::before {
 
 body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
   filter: grayscale(100%);
+}
+
+/* Cards Carousel */
+
+.s-container {
+  perspective: 3000px;
+}
+
+.s-cards-carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: calc(100vw / 3 - 10%);
+  transform-style: preserve-3d;
+  transition: transform .5s ease-in-out;
+}
+
+.s-card {
+  width: 100%;
 }

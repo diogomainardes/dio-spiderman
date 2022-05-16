@@ -19,30 +19,32 @@
     </ul>
   </nav>
   <div class="s-container">
-    <a href="./pages/andrew-garfield/spiderman1.html" id="spider-man-01" class="s-card">
-      <img src="/assets/images/pic-sm-bg-01.jpg" class="s-card__background">
-      <img class="s-card__image" src="/assets/images/spider-man-01.png" alt="Andrew Garfield">
-      <h2 class="s-card__title">Andrew Garfield</h2>
-    </a>
-    <a href="./pages/tom-holland/spiderman1.html" id="spider-man-02" class="s-card">
-      <img src="/assets/images/pic-sm-bg-02.jpg" class="s-card__background">
-      <img class="s-card__image" src="/assets/images/spider-man-02.png" alt="Tom Holland">
-      <h2 class="s-card__title">Tom Holland</h2>
-    </a>
-    <a href="./pages/tobey-maguire/spiderman1.html" id="spider-man-03" class="s-card">
-      <img src="/assets/images/pic-sm-bg-03.jpg" class="s-card__background">
-      <img class="s-card__image" src="/assets/images/spider-man-03.png" alt="Tobey Maguire">
-      <h2 class="s-card__title">Tobey Maguire</h2>
-    </a>
+    <div class="s-cards-carousel" style="transform: translateZ(-50vw) rotateY(0deg);">
+      <a href="./pages/andrew-garfield/spiderman1.html" id="spider-man-01" class="s-card" style="transform: rotateY(0deg) translateZ(50vw) rotateZ(0deg)">
+        <img src="/assets/images/pic-sm-bg-01.jpg" class="s-card__background">
+        <img class="s-card__image" src="/assets/images/spider-man-01.png" alt="Andrew Garfield">
+        <h2 class="s-card__title">Andrew Garfield</h2>
+      </a>
+      <a href="./pages/tom-holland/spiderman1.html" id="spider-man-02" class="s-card" style="transform: rotateY(120deg) translateZ(50vw) rotateZ(0deg)">
+        <img src="/assets/images/pic-sm-bg-02.jpg" class="s-card__background">
+        <img class="s-card__image" src="/assets/images/spider-man-02.png" alt="Tom Holland">
+        <h2 class="s-card__title">Tom Holland</h2>
+      </a>
+      <a href="./pages/tobey-maguire/spiderman1.html" id="spider-man-03" class="s-card" style="transform: rotateY(240deg) translateZ(50vw) rotateZ(0deg)">
+        <img src="/assets/images/pic-sm-bg-03.jpg" class="s-card__background">
+        <img class="s-card__image" src="/assets/images/spider-man-03.png" alt="Tobey Maguire">
+        <h2 class="s-card__title">Tobey Maguire</h2>
+      </a>
+    </div>
   </div>
   <div class="s-controller">
-    <div class="s-controller__button">
+    <div id="1" class="s-controller__button s-controller__button--active">
       01
     </div>
-    <div class="s-controller__button s-controller__button--active">
+    <div id="2" class="s-controller__button">
       02
     </div>
-    <div class="s-controller__button">
+    <div id="3" class="s-controller__button">
       03
     </div>
     <div class="s-controller__line"></div>

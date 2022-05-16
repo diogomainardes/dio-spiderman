@@ -54,7 +54,7 @@ body::before {
   width: calc(100% / 3 - 8%);
   height: 70vh;
   position: absolute;
-  transition: background-color 1s ease-in-out, filter .5s ease-in-out;
+  transition: background-color 1s ease-in-out, filter .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .s-card__background {

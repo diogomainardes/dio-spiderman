@@ -12,20 +12,31 @@
   flex-flow: row nowrap;   
 }
 
+.s-wrapper video{
+  position: fixed;
+  width: 100%;
+}
+
 .s-wrapper .s-left-column {
   width: 100px;
   height: 100%;
-  background-color: black;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  padding-right: 50px;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .s-wrapper .s-main-content{
   height: 100%;
   width: 100%;
-  background-color: gray;
-  padding-left: 30px;
+  padding-left: 130px;
+  position: relative;
 }
 
 .s-wrapper .s-main-content__top {

@@ -1,4 +1,11 @@
 {
-  "liveServer.settings.port": 5501,
-  "editor.tabSize": 2,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveFileBeforeRun": true,
+  "files.autoSave": "afterDelay",
+  "editor.linkedEditing": true,
+  "remote.WSL.fileWatcher.polling": true,
+  "remote.WSL.debug": true,
+  "files.autoSaveDelay": 500,
+	"liveServer.settings.port": 5501,
+  "editor.tabSize": 2
 }
